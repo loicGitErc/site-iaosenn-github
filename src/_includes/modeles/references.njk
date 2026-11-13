@@ -1,0 +1,57 @@
+---
+layout: base.njk
+---
+{%- set refs = collections.references -%}
+{%- set communes = dossierscommunes.communes | communesCarte -%}
+<div class="conteneur gabarit">
+	<h1 class="titre-page">{{ titre }}</h1>
+	<div class="prose">{{ content | safe }}</div>
+
+	<div class="carte">
+		<form class="carte__filtres" id="filtres-carte">
+			<fieldset>
+				<legend>Types de dossiers</legend>
+				<p class="carte__aide">Cocher un ou plusieurs types : les références concernées passent en vert.</p>
+				{%- for t in typesdossiers.types | typesUtilises(refs) %}
+				<label class="case"><input type="checkbox" name="type" value="{{ t.id }}"><span>{{ t.nom }}</span></label>
+				{%- endfor %}
+			</fieldset>
+			<button type="reset" class="bouton bouton--contour bouton--petit">Tout décocher</button>
+			<ul class="carte__legende">
+				<li><span class="legende legende--reference" aria-hidden="true"></span>Référence détaillée (fiche)</li>
+				<li><span class="legende legende--commune" aria-hidden="true">3</span>Dossiers par commune (le chiffre apparaît en zoomant) : cliquer sur le point pour les afficher</li>
+				<li><span class="legende legende--eau" aria-hidden="true"></span>Principaux cours d'eau (tracé schématique)</li>
+			</ul>
+		</form>
+		<div class="carte__zone">
+			<div id="carte-references" class="carte__fond" role="region" aria-label="Carte des références. Les listes sous la carte donnent les mêmes informations."></div>
+			<p class="carte__compteur" id="compteur-carte" aria-live="polite"></p>
+			<div class="carte__detail" id="detail-commune" aria-live="polite" hidden></div>
+		</div>
+	</div>
+
+	<h2 class="titre-section" id="titre-liste">Références détaillées</h2>
+	<ul class="references" id="liste-references">
+		{%- for r in refs %}
+		<li class="reference" data-types="{{ (r.data.types or []) | join(' ') }}">
+			<a class="reference__titre" href="{{ r.url }}">{{ r.data.titre }}</a>
+			{% if r.data.commune %}<span class="reference__commune">{{ r.data.commune }}</span>{% endif %}
+			<span class="reference__types">{{ r.data.types | nomsTypes(typesdossiers.types) | join(', ') }}</span>
+		</li>
+		{%- endfor %}
+	</ul>
+
+	{% if communes.length %}
+	<details class="communes">
+		<summary>Dossiers par commune ({{ communes | totalDossiers }} dossiers, {{ communes.length }} communes)</summary>
+		<dl class="communes__liste">
+			{%- for c in communes %}
+			<div><dt>{{ c.nom }}</dt><dd>{{ c.dossiers | join(" ; ") }}</dd></div>
+			{%- endfor %}
+		</dl>
+	</details>
+	{% endif %}
+</div>
+<script>window.iaoCarte = { references: {{ refs | donneesCarte | dump | safe }}, communes: {{ communes | dump | safe }}, fond: {{ fondcarte | dump | safe }}, vert: "{{ reglages.couleur_vert }}" };</script>
+<script src="/assets/leaflet/leaflet.js" defer></script>
+<script src="/assets/js/carte.js" defer></script>

@@ -1,0 +1,30 @@
+---
+layout: base.njk
+---
+<article class="conteneur gabarit fiche">
+	<p class="retour"><a href="/references/">Toutes les références</a></p>
+	<h1 class="titre-page">{{ titre }}</h1>
+	<div class="fiche__grille">
+		<div class="prose">
+			{% if image | existe %}<div class="image-une">{% image image, "", [800, 1600], "(max-width: 860px) 100vw, 700px" %}</div>{% endif %}
+			<h2>Missions</h2>
+			{{ content | safe }}
+		</div>
+		<dl class="fiche__infos">
+			{% if commune %}<dt>Commune</dt><dd>{{ commune }}</dd>{% endif %}
+			{% if surface %}<dt>Surface</dt><dd>{{ surface }}</dd>{% endif %}
+			{% if maitre_ouvrage %}<dt>Maître d'ouvrage</dt><dd>{{ maitre_ouvrage }}</dd>{% endif %}
+			{% if equipe and equipe.length %}<dt>Équipe</dt><dd>{% for e in equipe %}{{ e }}{% if not loop.last %}<br>{% endif %}{% endfor %}</dd>{% endif %}
+			{% if types and types.length %}
+			<dt>Types de dossiers</dt>
+			<dd>
+				<ul class="etiquettes">
+					{%- for t in typesdossiers.types %}{% if t.id in types %}
+					<li><a href="/references/?type={{ t.id }}">{{ t.nom }}</a></li>
+					{%- endif %}{% endfor %}
+				</ul>
+			</dd>
+			{% endif %}
+		</dl>
+	</div>
+</article>

@@ -1,0 +1,30 @@
+---
+layout: base.njk
+---
+{% from "icones-poles.njk" import icone %}
+<div class="conteneur gabarit">
+	<h1 class="titre-page">{{ titre }}</h1>
+	<div class="prose">{{ content | safe }}</div>
+	<div class="poles" id="poles">
+		<ul class="poles__liste">
+			{%- for p in collections.poles %}
+			<li><a class="pole" href="#pole-{{ p.page.fileSlug }}" data-pole="pole-{{ p.page.fileSlug }}">{{ icone(p.data.icone) }}<span class="pole__nom">{{ p.data.titre }}</span></a></li>
+			{%- endfor %}
+		</ul>
+		<div class="poles__panneaux">
+			{%- for p in collections.poles %}
+			<section class="pole-panneau" id="pole-{{ p.page.fileSlug }}" tabindex="-1">
+				<h2 class="pole-panneau__titre">{{ p.data.titre }}</h2>
+				{% if p.content | striptags | trim %}<div class="prose">{{ p.content | safe }}</div>{% endif %}
+				{% if p.data.metiers and p.data.metiers.length %}
+				<ul class="pole-panneau__metiers">
+					{%- for m in p.data.metiers %}<li>{{ m }}</li>{% endfor %}
+				</ul>
+				{% endif %}
+			</section>
+			{%- endfor %}
+		</div>
+	</div>
+	<p class="renvoi">Le détail des métiers est donné dans <a href="/metiers-et-competences/">Métiers et compétences</a>.</p>
+</div>
+<script src="/assets/js/poles.js" defer></script>

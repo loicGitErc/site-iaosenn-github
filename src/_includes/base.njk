@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if title and page.url != "/" %}{{ title }} | {% endif %}{{ reglages.nom }}{% if page.url == "/" %} | {{ reglages.description }}{% endif %}</title>
+<meta name="description" content="{{ description or reglages.description }}">
+<link rel="icon" href="/assets/img/filigrane.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/style.css">
+<style>:root{--vert:{{ reglages.couleur_vert }};--violet:{{ reglages.couleur_violet }};}</style>
+{% if modele == "references" %}<link rel="stylesheet" href="/assets/leaflet/leaflet.css">{% endif %}
+</head>
+<body class="{% if reglages.filigrane %}avec-filigrane{% endif %}">
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header class="entete">
+	<div class="conteneur entete__barre">
+		<div class="entete__logo">
+			<a href="/" rel="home"><img src="/assets/img/logo.svg" alt="iao senn, retour à l'accueil" width="126" height="48"></a>
+		</div>
+		<button class="entete__bouton" type="button" aria-expanded="false" aria-controls="menu-principal">
+			<span class="entete__barres" aria-hidden="true"></span>Menu
+		</button>
+		<nav id="menu-principal" class="navigation" aria-label="Menu principal">
+			<ul class="menu">
+				{%- for lien in menu.liens %}
+				<li{% if page.url | courant(lien.url) %} class="current-menu-item"{% endif %}><a href="{{ lien.url }}"{% if page.url == lien.url %} aria-current="page"{% endif %}>{{ lien.titre }}</a></li>
+				{%- endfor %}
+			</ul>
+		</nav>
+	</div>
+</header>
+<main id="contenu">
+{{ content | safe }}
+</main>
+<footer class="pied">
+	<div class="conteneur pied__grille">
+		<div>
+			<img class="pied__logo" src="/assets/img/logo.svg" alt="iao senn" width="126" height="48">
+			<p>{{ reglages.description }}</p>
+		</div>
+		<address class="pied__adresse">
+			{%- for l in reglages.adresse | lignes %}{{ l }}<br>{% endfor %}
+			{% if reglages.telephone %}<a href="tel:{{ reglages.telephone | telephone }}">{{ reglages.telephone }}</a><br>{% endif %}
+			{% if reglages.courriel %}<a href="mailto:{{ reglages.courriel }}">{{ reglages.courriel }}</a>{% endif %}
+		</address>
+		<nav aria-label="Liens du pied de page">
+			<ul class="pied__liens">
+				{%- for lien in menu.pied %}<li><a href="{{ lien.url }}">{{ lien.titre }}</a></li>{% endfor %}
+			</ul>
+			{% if reglages.linkedin %}<p><a href="{{ reglages.linkedin }}" rel="noopener">Suivre iao senn sur LinkedIn</a></p>{% endif %}
+		</nav>
+	</div>
+	<div class="conteneur pied__bas">© {{ "" | annee }} iao senn</div>
+</footer>
+<script src="/assets/js/menu.js" defer></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

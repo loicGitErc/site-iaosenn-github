@@ -1,0 +1,18 @@
+{# Icônes des pôles. Pour en ajouter une : un nouveau bloc « elif », puis l'ajouter à la liste du champ « Icône » dans admin/config.yml. #}
+{% macro icone(nom) %}
+<svg class="pole__icone" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+{%- if nom == "hydraulique" %}
+	<path d="M24 5C24 5 10 21 10 30.5a14 14 0 0 0 28 0C38 21 24 5 24 5Z"/><path d="M16 31q4-4 8 0t8 0"/>
+{%- elif nom == "milieu" %}
+	<path d="M7 34C7 18 19 6 41 6c0 20-11 31-29 30"/><path d="M7 40c4-12 12-20 22-25"/><path d="M24 43q4-3 8 0t8 0"/>
+{%- elif nom == "environnement" %}
+	<circle cx="13" cy="12" r="5"/><path d="M3 40l13-17 8 9 8-14 13 22Z"/>
+{%- elif nom == "support" %}
+	<rect x="10" y="9" width="28" height="34" rx="3"/><rect x="18" y="5" width="12" height="8" rx="2"/><path d="M16 22h16M16 29h16M16 36h9"/>
+{%- elif nom == "finistere" %}
+	<path d="M19 43l3-26h4l3 26Z"/><rect x="20" y="10" width="8" height="7"/><path d="M18 10l6-5 6 5"/><path d="M33 12l8-3M33 15l8 2M15 12L7 9M15 15l-8 2M11 43h26"/>
+{%- else %}
+	<circle cx="24" cy="24" r="16"/>
+{%- endif %}
+</svg>
+{% endmacro %}

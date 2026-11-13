@@ -1,0 +1,44 @@
+{
+  "types": [
+    {
+      "id": "inventaire-faune-flore",
+      "nom": "Inventaire faune-flore"
+    },
+    {
+      "id": "inventaire-zones-humides",
+      "nom": "Inventaire des zones humides"
+    },
+    {
+      "id": "diagnostic",
+      "nom": "Diagnostic"
+    },
+    {
+      "id": "etude-impact",
+      "nom": "Étude d'impact"
+    },
+    {
+      "id": "dossier-loi-sur-eau",
+      "nom": "Dossier loi sur l'eau"
+    },
+    {
+      "id": "gestion-eaux-pluviales",
+      "nom": "Gestion des eaux pluviales"
+    },
+    {
+      "id": "etude-hydraulique",
+      "nom": "Étude hydraulique"
+    },
+    {
+      "id": "evaluation-environnementale",
+      "nom": "Évaluation environnementale de document d'urbanisme"
+    },
+    {
+      "id": "incidences-natura-2000",
+      "nom": "Étude d'incidences Natura 2000"
+    },
+    {
+      "id": "suivi-realisation",
+      "nom": "Suivi en phase de réalisation"
+    }
+  ]
+}

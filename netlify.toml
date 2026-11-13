@@ -1,0 +1,8 @@
+# Réglages de publication, utilisés si le site est hébergé sur Netlify.
+# Autre hébergeur : commande de construction « npx @11ty/eleventy », dossier publié « _site ».
+[build]
+  command = "npx @11ty/eleventy"
+  publish = "_site"
+
+[build.environment]
+  NODE_VERSION = "20"

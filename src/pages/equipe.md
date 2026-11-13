@@ -1,0 +1,4 @@
+---
+titre: "Équipe"
+modele: "equipe"
+---

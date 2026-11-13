@@ -1,0 +1,33 @@
+---
+layout: base.njk
+---
+<div class="conteneur gabarit">
+	<h1 class="titre-page">{{ titre }}</h1>
+	<div class="prose">{{ content | safe }}</div>
+	<div class="contact-grille">
+		<div class="agences">
+			<section class="agence">
+				<h2 class="agence__nom">{{ reglages.nom_agence or "Agence principale" }}</h2>
+				<dl class="contact">
+					<div><dt>Adresse</dt><dd><address>{% for l in reglages.adresse | lignes %}{{ l }}{% if not loop.last %}<br>{% endif %}{% endfor %}</address></dd></div>
+					{% if reglages.telephone %}<div><dt>Téléphone</dt><dd><a href="tel:{{ reglages.telephone | telephone }}">{{ reglages.telephone }}</a></dd></div>{% endif %}
+					{% if reglages.courriel %}<div><dt>Courriel</dt><dd><a href="mailto:{{ reglages.courriel }}">{{ reglages.courriel }}</a></dd></div>{% endif %}
+				</dl>
+			</section>
+			{%- for a in reglages.agences %}
+			<section class="agence">
+				<h2 class="agence__nom">{{ a.nom }}</h2>
+				<dl class="contact">
+					{% if a.adresse %}<div><dt>Adresse</dt><dd><address>{% for l in a.adresse | lignes %}{{ l }}{% if not loop.last %}<br>{% endif %}{% endfor %}</address></dd></div>{% endif %}
+					{% if a.telephone %}<div><dt>Téléphone</dt><dd><a href="tel:{{ a.telephone | telephone }}">{{ a.telephone }}</a></dd></div>{% endif %}
+					{% if a.courriel %}<div><dt>Courriel</dt><dd><a href="mailto:{{ a.courriel }}">{{ a.courriel }}</a></dd></div>{% endif %}
+				</dl>
+			</section>
+			{%- endfor %}
+			{% if reglages.linkedin %}<p><a href="{{ reglages.linkedin }}" rel="noopener">Page LinkedIn iao senn</a></p>{% endif %}
+		</div>
+		<figure class="contact-carte">
+			{% include "carte-simplifiee.njk" %}
+		</figure>
+	</div>
+</div>

@@ -1,0 +1,45 @@
+---
+layout: base.njk
+---
+<div class="conteneur gabarit">
+	<h1 class="titre-page">{{ titre }}</h1>
+	{%- for r in rubriques.rubriques %}
+	<section class="rubrique" id="rubrique-{{ r.id }}">
+		<h2 class="rubrique__titre">{{ r.nom }}</h2>
+		<div class="rubrique__corps">
+			{% if r.elements and r.elements.length %}
+			<ul class="rubrique__elements">
+				{%- for e in r.elements %}<li>{{ e }}</li>{% endfor %}
+			</ul>
+			<p class="rubrique__note">Liste non limitative.</p>
+			{% endif %}
+			{%- set fiches = collections.dossiers | deRubrique(r.id) %}
+			{% if fiches.length %}
+			<dl class="dossiers">
+				{%- for d in fiches %}
+				<div class="dossier" id="dossier-{{ d.page.fileSlug }}">
+					<dt>{{ d.data.titre }}{% if d.data.a_valider %} <span class="a-valider">À valider</span>{% endif %}</dt>
+					<dd>
+						<div class="prose">{{ d.content | safe }}</div>
+						{% if d.data.types and d.data.types.length %}<p><a href="/references/?type={{ d.data.types[0] }}">Voir les références concernées sur la carte</a></p>{% endif %}
+					</dd>
+				</div>
+				{%- endfor %}
+			</dl>
+			{% endif %}
+		</div>
+	</section>
+	{%- endfor %}
+	{%- set autres = collections.dossiers | sansRubrique(rubriques.rubriques) %}
+	{% if autres.length %}
+	<section class="rubrique">
+		<h2 class="rubrique__titre">Autres définitions</h2>
+		<div class="rubrique__corps"><dl class="dossiers">
+			{%- for d in autres %}
+			<div class="dossier" id="dossier-{{ d.page.fileSlug }}"><dt>{{ d.data.titre }}{% if d.data.a_valider %} <span class="a-valider">À valider</span>{% endif %}</dt><dd><div class="prose">{{ d.content | safe }}</div></dd></div>
+			{%- endfor %}
+		</dl></div>
+	</section>
+	{% endif %}
+	<div class="prose">{{ content | safe }}</div>
+</div>

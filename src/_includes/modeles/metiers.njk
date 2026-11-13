@@ -1,0 +1,19 @@
+---
+layout: base.njk
+---
+<div class="conteneur gabarit">
+	<h1 class="titre-page">{{ titre }}</h1>
+	<div class="prose">{{ content | safe }}</div>
+	<div class="metiers">
+		{%- for m in collections.metiers %}
+		<section class="metier" id="metier-{{ m.page.fileSlug }}">
+			{% if m.data.image | existe %}<div class="metier__image">{% image m.data.image, "", [640, 1280], "(max-width: 760px) 100vw, 320px" %}</div>{% endif %}
+			<div>
+				<h2 class="metier__titre">{{ m.data.titre }}</h2>
+				<div class="prose">{{ m.content | safe }}</div>
+			</div>
+		</section>
+		{%- endfor %}
+	</div>
+	<p class="renvoi">Les procédures et les types de dossiers sont expliqués dans <a href="/principaux-dossiers/">Principaux dossiers</a>.</p>
+</div>

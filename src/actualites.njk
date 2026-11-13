@@ -1,0 +1,34 @@
+---
+pagination:
+  data: collections.actualites
+  size: 10
+  alias: actus
+  generatePageOnEmptyData: true
+permalink: "/actualites/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}"
+layout: base.njk
+title: Actualités
+---
+<div class="conteneur gabarit">
+	<h1 class="titre-page">Actualités</h1>
+	{% if reglages.linkedin %}<p><a href="{{ reglages.linkedin }}" rel="noopener">Suivre iao senn sur LinkedIn</a></p>{% endif %}
+	{% if actus.length %}
+	<div class="actus">
+		{%- for a in actus %}
+		<article class="actu">
+			{% if a.data.image | existe %}<a class="actu__image" href="{{ a.url }}" tabindex="-1" aria-hidden="true">{% image a.data.image, "", [640, 1280], "(max-width: 760px) 100vw, 256px" %}</a>{% endif %}
+			<div>
+				<time datetime="{{ a.date | dateIso }}">{{ a.date | dateFr }}</time>
+				<h2 class="actu__titre"><a href="{{ a.url }}">{{ a.data.titre }}</a></h2>
+				{% if a.data.resume %}<p>{{ a.data.resume }}</p>{% endif %}
+			</div>
+		</article>
+		{%- endfor %}
+	</div>
+	<nav class="nav-links" aria-label="Pages d'actualités">
+		{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Plus récentes</a>{% endif %}
+		{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Plus anciennes</a>{% endif %}
+	</nav>
+	{% else %}
+	<p>Aucune actualité publiée pour l'instant.</p>
+	{% endif %}
+</div>

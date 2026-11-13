@@ -1,0 +1,19 @@
+---
+layout: base.njk
+---
+<div class="conteneur gabarit">
+	<h1 class="titre-page">{{ titre }}</h1>
+	<div class="prose">{{ content | safe }}</div>
+	<ul class="equipe">
+		{%- for m in collections.equipe %}
+		<li class="membre">
+			<div class="membre__photo">
+				{%- if m.data.photo | existe %}{% image m.data.photo, m.data.nom, [480, 960], "(max-width: 760px) 50vw, 240px" %}{% else %}<span aria-hidden="true">{{ m.data.nom | initiales }}</span>{% endif %}
+			</div>
+			<h2 class="membre__nom">{{ m.data.nom }}</h2>
+			{% if m.data.fonction %}<p class="membre__fonction">{{ m.data.fonction }}</p>{% endif %}
+			{% if m.data.specialite %}<p class="membre__specialite">{{ m.data.specialite }}</p>{% endif %}
+		</li>
+		{%- endfor %}
+	</ul>
+</div>

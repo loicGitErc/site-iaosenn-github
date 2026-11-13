@@ -1,0 +1,26 @@
+{
+  "nom": "iao senn",
+  "description": "Bureau d'études environnement",
+  "couleur_vert": "#72AF2D",
+  "couleur_violet": "#7347D1",
+  "filigrane": true,
+  "accroche": "",
+  "themes": [
+    "Gestion intégrée des eaux pluviales et gestion de la ressource en eau",
+    "Accompagnement environnemental de projet",
+    "Milieu naturel et cours d'eau"
+  ],
+  "adresse": "29 rue de Chantepie\n35770 Vern-sur-Seiche",
+  "telephone": "02 23 62 38 43",
+  "courriel": "contact@iaosenn.fr",
+  "linkedin": "",
+  "nom_agence": "Agence de Rennes",
+  "agences": [
+    {
+      "nom": "Agence de Morlaix",
+      "adresse": "[À COMPLÉTER : adresse de l'agence de Morlaix]",
+      "telephone": "07 72 20 26 44",
+      "courriel": "lrucquoy@iaosenn.fr"
+    }
+  ]
+}

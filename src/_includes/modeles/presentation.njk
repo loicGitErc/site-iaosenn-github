@@ -1,0 +1,13 @@
+---
+layout: base.njk
+---
+<article class="conteneur gabarit presentation">
+	<h1 class="titre-page">{{ titre }}</h1>
+	<div class="presentation__grille">
+		<div class="prose">{{ content | safe }}</div>
+		<figure class="presentation__carte">
+			{% include "carte-simplifiee.njk" %}
+			<figcaption>Deux agences, à Vern-sur-Seiche (Rennes) et à Morlaix.</figcaption>
+		</figure>
+	</div>
+</article>

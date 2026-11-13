@@ -1,0 +1,1759 @@
+{
+ "communes": [
+  {
+   "nom": "Argentré-du-Plessis",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.146, 48.057]}",
+   "dossiers": [
+    "BAM"
+   ]
+  },
+  {
+   "nom": "Bain-de-Bretagne",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.6858, 47.8469]}",
+   "dossiers": [
+    "Basse Bodais, IZH-CM Aménagement Foncier Rennes",
+    "Basse Bodais IZH, commune",
+    "Basse Bodais Nexity IR prgm",
+    "Cap Accession, Rue de Verdun",
+    "CMAF et Nexity, Lotissement Les Villas Bodais",
+    "Commune-Ancien ciné",
+    "IZH Lycée pro",
+    "Parking allee des Glycines"
+   ]
+  },
+  {
+   "nom": "Balazé",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.1924, 48.1692]}",
+   "dossiers": [
+    "Pont bas Chaveignel"
+   ]
+  },
+  {
+   "nom": "Baulon",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.932, 47.9852]}",
+   "dossiers": [
+    "IZH",
+    "Perméa"
+   ]
+  },
+  {
+   "nom": "Bécherel",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.9453, 48.2962]}",
+   "dossiers": [
+    "Résidence séniors"
+   ]
+  },
+  {
+   "nom": "Bédée",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.9447, 48.18]}",
+   "dossiers": [
+    "CentreHospitalier"
+   ]
+  },
+  {
+   "nom": "Betton",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.6448, 48.1827]}",
+   "dossiers": [
+    "Espacil",
+    "La Renaudais",
+    "La Touche",
+    "ZA les Rignes",
+    "ZAC La Plesse, ECR"
+   ]
+  },
+  {
+   "nom": "Billé",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.2456, 48.2882]}",
+   "dossiers": [
+    "Billé"
+   ]
+  },
+  {
+   "nom": "Binic",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.8243, 48.605]}",
+   "dossiers": [
+    "Tertre Graal"
+   ]
+  },
+  {
+   "nom": "Boisgervilly",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.0644, 48.1669]}",
+   "dossiers": [
+    "Boisgervilly"
+   ]
+  },
+  {
+   "nom": "Bourgbarré",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.6153, 47.9951]}",
+   "dossiers": [
+    "Brassens"
+   ]
+  },
+  {
+   "nom": "Bréal-sous-Montfort",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.8672, 48.048]}",
+   "dossiers": [
+    "Cours d'eau",
+    "Emondière",
+    "Jardins de Brocéliande",
+    "Jonction routière",
+    "La haie d'Isaac",
+    "Parc Indoor",
+    "SDGEP BV Etignac, commune",
+    "Viabilis",
+    "Viabilis, le clos couet",
+    "Viabilis Praie Sud IZH"
+   ]
+  },
+  {
+   "nom": "Brec'h",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.9971, 47.7208]}",
+   "dossiers": [
+    "Quartier de la Chartreuse"
+   ]
+  },
+  {
+   "nom": "Brest",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-4.4863, 48.3903]}",
+   "dossiers": [
+    "KORUS Kiabi-ETIXIA",
+    "Réalités",
+    "Résidence étudiant Eiffage, ABE",
+    "Thales, Etude deconnexion"
+   ]
+  },
+  {
+   "nom": "Breteil",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.8986, 48.1452]}",
+   "dossiers": [
+    "Berthelotière",
+    "Déchèterie"
+   ]
+  },
+  {
+   "nom": "Bruz",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.7471, 48.0246]}",
+   "dossiers": [
+    "Cadrage environnemental",
+    "Cap West Pommeraie",
+    "Lycée Saint Joseph",
+    "ZAC"
+   ]
+  },
+  {
+   "nom": "Camlez",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.3043, 48.7781]}",
+   "dossiers": [
+    "Le calvary, SPLA Lannion Trégor"
+   ]
+  },
+  {
+   "nom": "Cancale",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.8522, 48.6766]}",
+   "dossiers": [
+    "Chemin des prés",
+    "Diagnostic if",
+    "GEP et redimmensionnement de bassin",
+    "Près Bosgers"
+   ]
+  },
+  {
+   "nom": "Carentoir",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.1349, 47.8172]}",
+   "dossiers": [
+    "Lotissement"
+   ]
+  },
+  {
+   "nom": "Carhaix-Plouguer",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.5733, 48.2759]}",
+   "dossiers": [
+    "EPMS de Kerampuilh",
+    "Lotissement Allée des peupliers-Nexity",
+    "Nexity"
+   ]
+  },
+  {
+   "nom": "Carnac",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.0787, 47.5843]}",
+   "dossiers": [
+    "Kerallan groupe Arc"
+   ]
+  },
+  {
+   "nom": "Caro",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.3194, 47.8643]}",
+   "dossiers": [
+    "Caro"
+   ]
+  },
+  {
+   "nom": "Caulnes",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.1544, 48.2889]}",
+   "dossiers": [
+    "Lotissement des champs"
+   ]
+  },
+  {
+   "nom": "Cavan",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.3462, 48.6722]}",
+   "dossiers": [
+    "Kerhuellan T2",
+    "Lannion Trégor communautaire",
+    "Lot Kerhuellan, SEM Lannion Trégor"
+   ]
+  },
+  {
+   "nom": "Cesson-Sévigné",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.603, 48.1212]}",
+   "dossiers": [
+    "BatiArmor-CaisseEparghne",
+    "Chene morand",
+    "Kercampus",
+    "La Monniais",
+    "La Rigourdière",
+    "Office Santé",
+    "Padel",
+    "Piste Menouriais",
+    "Régularisation exutoire",
+    "SEV JO2024",
+    "ViaSilva DREAM-Bati-Armor"
+   ]
+  },
+  {
+   "nom": "Chantepie",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.6169, 48.0882]}",
+   "dossiers": [
+    "Cheminement piétonCycle, LeBlosne",
+    "Hallouvry Lamotte",
+    "IFF Parc",
+    "Ilot Marelles-Granier",
+    "Kerloges, ZA Loges-Logettes",
+    "Parc urbain",
+    "PBS"
+   ]
+  },
+  {
+   "nom": "Chartres-de-Bretagne",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.7054, 48.0397]}",
+   "dossiers": [
+    "ENS Lormandière",
+    "Groupe Launay",
+    "La Janais",
+    "La Janais, bâtiment 78",
+    "Schneider",
+    "Zac-Seiche"
+   ]
+  },
+  {
+   "nom": "Châteaubourg",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.4035, 48.1111]}",
+   "dossiers": [
+    "3 rue de Vitré",
+    "Avenue platanes",
+    "Châteaubourg",
+    "Lotissement Horizon, Petites bonnes maisons",
+    "MAN TP",
+    "Parc Ar Milin, Burel",
+    "Réalités",
+    "Résidence Sénior",
+    "Résidence-service-et-hôtel"
+   ]
+  },
+  {
+   "nom": "Châteaugiron",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.5036, 48.0482]}",
+   "dossiers": [
+    "Lann Braz 4, Viabilis"
+   ]
+  },
+  {
+   "nom": "Châteauneuf-d'Ille-et-Vilaine",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.93, 48.5606]}",
+   "dossiers": [
+    "Chantier+hydro+NH"
+   ]
+  },
+  {
+   "nom": "Châtillon-en-Vendelais",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.1789, 48.2248]}",
+   "dossiers": [
+    "Destruction Bati"
+   ]
+  },
+  {
+   "nom": "Chavagne",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.7877, 48.0537]}",
+   "dossiers": [
+    "Ilot NEC ZAC Touche",
+    "Résidence du mail",
+    "ZAC La touche"
+   ]
+  },
+  {
+   "nom": "Chevaigné",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.6297, 48.2114]}",
+   "dossiers": [
+    "ZAC 3Lieux, Coordination environnementale",
+    "ZAC 3lieux-Territoires"
+   ]
+  },
+  {
+   "nom": "Cintré",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.8715, 48.1057]}",
+   "dossiers": [
+    "Ruisseau Fontaine Saint Melaine"
+   ]
+  },
+  {
+   "nom": "Cléden-Poher",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.6692, 48.2358]}",
+   "dossiers": [
+    "AREA"
+   ]
+  },
+  {
+   "nom": "Concarneau",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.919, 47.8754]}",
+   "dossiers": [
+    "GFI"
+   ]
+  },
+  {
+   "nom": "Concoret",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.2069, 48.0641]}",
+   "dossiers": [
+    "Ecole"
+   ]
+  },
+  {
+   "nom": "Corps-Nuds",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.5873, 47.9781]}",
+   "dossiers": [
+    "Champ Noyer",
+    "Corps-Nuds"
+   ]
+  },
+  {
+   "nom": "Crac'h",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.0017, 47.617]}",
+   "dossiers": [
+    "Kerzuc",
+    "Zonage Pluvial"
+   ]
+  },
+  {
+   "nom": "Créhen",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.2137, 48.5453]}",
+   "dossiers": [
+    "Laita"
+   ]
+  },
+  {
+   "nom": "Crevin",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.6624, 47.9374]}",
+   "dossiers": [
+    "Extension de cimetière"
+   ]
+  },
+  {
+   "nom": "Dinan",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.0505, 48.4555]}",
+   "dossiers": [
+    "CTR, Groupe Launay",
+    "Dinan Agglomération, extensions ZA",
+    "Dinan Agglomération, Pont Pinet",
+    "Dinan Agglomération, récupération et déconnexion EP",
+    "Hôpital",
+    "Lycée La Fontaine des eaux",
+    "Rue de chateaubriand, Neotoa"
+   ]
+  },
+  {
+   "nom": "Dinard",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.0627, 48.6329]}",
+   "dossiers": [
+    "Dinard",
+    "Piscine"
+   ]
+  },
+  {
+   "nom": "Dol-de-Bretagne",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.751, 48.5498]}",
+   "dossiers": [
+    "BAM Immobilier",
+    "Lycée APellé",
+    "Parking rue des Murets",
+    "Quartier Pierre Semard",
+    "Rte de la Boussac",
+    "ZAC Maboué, complément d'étude d'impact"
+   ]
+  },
+  {
+   "nom": "Domagné",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.3921, 48.0707]}",
+   "dossiers": [
+    "Extension salle des sports-FABER"
+   ]
+  },
+  {
+   "nom": "Douarnenez",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-4.329, 48.0954]}",
+   "dossiers": [
+    "Ancien hôpital"
+   ]
+  },
+  {
+   "nom": "Erbrée",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.125, 48.0983]}",
+   "dossiers": [
+    "ITM"
+   ]
+  },
+  {
+   "nom": "Esquibien",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-4.5614, 48.0251]}",
+   "dossiers": [
+    "Commune"
+   ]
+  },
+  {
+   "nom": "Fougères",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.1996, 48.3516]}",
+   "dossiers": [
+    "Accecity",
+    "Dimensionnement de réseau",
+    "Dugueslin",
+    "Ilot fourchette",
+    "Inondation chemin Bertin",
+    "MAS de Paron",
+    "PEM",
+    "PLU AS",
+    "Rue Melouin",
+    "Zonage Pluvial"
+   ]
+  },
+  {
+   "nom": "Gennes-sur-Seiche",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.1246, 47.9894]}",
+   "dossiers": [
+    "IZH"
+   ]
+  },
+  {
+   "nom": "Gévezé",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.7914, 48.2213]}",
+   "dossiers": [
+    "Déchetterie",
+    "Gueury La Douve",
+    "Placis breal Marignan"
+   ]
+  },
+  {
+   "nom": "Grand-Fougeray",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.7327, 47.7239]}",
+   "dossiers": [
+    "ITM",
+    "Plein Sud, commune",
+    "PLein-sud-T2"
+   ]
+  },
+  {
+   "nom": "Guer",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.1203, 47.904]}",
+   "dossiers": [
+    "Lot 8, Val Coric"
+   ]
+  },
+  {
+   "nom": "Guerlesquin",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.589, 48.5173]}",
+   "dossiers": [
+    "Guerlesquin"
+   ]
+  },
+  {
+   "nom": "Guichen",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.7958, 47.9681]}",
+   "dossiers": [
+    "Domaine de St Marc",
+    "Pont-Réan, chemin de la Massaye",
+    "Pont-Réan, MOE centre-bourg"
+   ]
+  },
+  {
+   "nom": "Guidel",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.487, 47.79]}",
+   "dossiers": [
+    "Cimetière",
+    "Kergroez-ilot B",
+    "Secteur Kergroez",
+    "Vallon de Villeneuve",
+    "ZAC, Secteur Centre"
+   ]
+  },
+  {
+   "nom": "Guignen",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.863, 47.9209]}",
+   "dossiers": [
+    "ZA Bignon"
+   ]
+  },
+  {
+   "nom": "Guingamp",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.1529, 48.5626]}",
+   "dossiers": [
+    "Chateau des salles"
+   ]
+  },
+  {
+   "nom": "Guipavas",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-4.402, 48.4341]}",
+   "dossiers": [
+    "Parking Keradrien",
+    "Pen Ar Creach"
+   ]
+  },
+  {
+   "nom": "Guipry-Messac",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.8422, 47.8253]}",
+   "dossiers": [
+    "Impasse des Charmilles",
+    "Secteur Cosmos gare"
+   ]
+  },
+  {
+   "nom": "Henvic",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.9273, 48.6324]}",
+   "dossiers": [
+    "An dour"
+   ]
+  },
+  {
+   "nom": "Iffendic",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.036, 48.1304]}",
+   "dossiers": [
+    "Rue Piou"
+   ]
+  },
+  {
+   "nom": "Irodouër",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.95, 48.2495]}",
+   "dossiers": [
+    "Ecole Henri Dies"
+   ]
+  },
+  {
+   "nom": "Janzé",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.4994, 47.9596]}",
+   "dossiers": [
+    "Collège Jean Monnet",
+    "Huberdiere Eaux&Vilaine",
+    "OAP Rue de Rennes",
+    "ZAC Multisites",
+    "Zonage"
+   ]
+  },
+  {
+   "nom": "Javené",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.2165, 48.3196]}",
+   "dossiers": [
+    "HTL, Sotrav"
+   ]
+  },
+  {
+   "nom": "Jugon-les-Lacs",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.333, 48.417]}",
+   "dossiers": [
+    "PetitEtang"
+   ]
+  },
+  {
+   "nom": "Kervignac",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.2391, 47.7637]}",
+   "dossiers": [
+    "Ecole Françoise Dolto",
+    "Kervignac"
+   ]
+  },
+  {
+   "nom": "L'Hermitage",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.817, 48.123]}",
+   "dossiers": [
+    "Rue de Rennes Bati Armor Lamotte"
+   ]
+  },
+  {
+   "nom": "La Baussaine",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.8984, 48.313]}",
+   "dossiers": [
+    "CMAF"
+   ]
+  },
+  {
+   "nom": "La Bouëxière",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.4384, 48.184]}",
+   "dossiers": [
+    "Néotoa BNR"
+   ]
+  },
+  {
+   "nom": "La Chapelle-des-Fougeretz",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.7318, 48.1773]}",
+   "dossiers": [
+    "Territoires"
+   ]
+  },
+  {
+   "nom": "La Chapelle-Thouarault",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.866, 48.124]}",
+   "dossiers": [
+    "La Chapelle-Thouarault"
+   ]
+  },
+  {
+   "nom": "La Dominelais",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.688, 47.7623]}",
+   "dossiers": [
+    "Centre technique municipal"
+   ]
+  },
+  {
+   "nom": "La Fresnais",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.8433, 48.5956]}",
+   "dossiers": [
+    "La Moinerie"
+   ]
+  },
+  {
+   "nom": "La Gouesnière",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.8952, 48.6044]}",
+   "dossiers": [
+    "Révision domaine de launay"
+   ]
+  },
+  {
+   "nom": "La Guerche-de-Bretagne",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.2309, 47.9417]}",
+   "dossiers": [
+    "Rue des sorbiers dérog Alignements"
+   ]
+  },
+  {
+   "nom": "La Mézière",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.7546, 48.2183]}",
+   "dossiers": [
+    "Menuiserie-Guitton",
+    "Vald'Ille, Franchissement RD137"
+   ]
+  },
+  {
+   "nom": "La Roche-Jaudy",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.261, 48.747]}",
+   "dossiers": [
+    "AMO Déconnexion, LTC, La Roche-Derrien"
+   ]
+  },
+  {
+   "nom": "La Selle-en-Luitré",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.1276, 48.3111]}",
+   "dossiers": [
+    "Lotissement communal"
+   ]
+  },
+  {
+   "nom": "La Trinité-sur-Mer",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.0305, 47.5859]}",
+   "dossiers": [
+    "Colonie de vacs de Bagneux"
+   ]
+  },
+  {
+   "nom": "La Vraie-Croix",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.5436, 47.6897]}",
+   "dossiers": [
+    "Hameaux verts"
+   ]
+  },
+  {
+   "nom": "Laillé",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.7194, 47.9782]}",
+   "dossiers": [
+    "Aire de covoiturage",
+    "Lagon bleu",
+    "ZA Les 3 Prés",
+    "ZAC de la Touche, Territoires"
+   ]
+  },
+  {
+   "nom": "Lamballe-Armor",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.5178, 48.4681]}",
+   "dossiers": [
+    "AG Aménagement, Lotissement Rue Césaire",
+    "AMO hydro",
+    "Fossé Rue Lanjouan",
+    "LaRance, LIAP",
+    "Lotissement Amel, Nord-Sud",
+    "Lotissement Moulin à vents, Trégomar",
+    "Lotissement Rue des Fontaines",
+    "Maroué, Nord-Sud",
+    "Requalification Bourg Hurel",
+    "Requalification Champ de foire",
+    "Residence domaine Champagne-Lamotte",
+    "Saint Martin-Langevin",
+    "Zonage pluvial"
+   ]
+  },
+  {
+   "nom": "Landéhen",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.5396, 48.4297]}",
+   "dossiers": [
+    "Amel",
+    "NordSud"
+   ]
+  },
+  {
+   "nom": "Landivisiau",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-4.0691, 48.5091]}",
+   "dossiers": [
+    "Complexe sportif",
+    "Ensemble commercial Maréchal Joffre"
+   ]
+  },
+  {
+   "nom": "Landujan",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.997, 48.2507]}",
+   "dossiers": [
+    "NS"
+   ]
+  },
+  {
+   "nom": "Langon",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.849, 47.72]}",
+   "dossiers": [
+    "Ancienne école privée"
+   ]
+  },
+  {
+   "nom": "Langonnet",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.4936, 48.105]}",
+   "dossiers": [
+    "Cours d'eau",
+    "La Trinité-Langonnet"
+   ]
+  },
+  {
+   "nom": "Languenan",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.1279, 48.511]}",
+   "dossiers": [
+    "Clemencerie-Deco EP"
+   ]
+  },
+  {
+   "nom": "Lannion",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.4566, 48.7326]}",
+   "dossiers": [
+    "Collège",
+    "Nod-Huel",
+    "Orange-Legendre",
+    "Saint-Marc"
+   ]
+  },
+  {
+   "nom": "Lantic",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.8825, 48.6059]}",
+   "dossiers": [
+    "Lantic"
+   ]
+  },
+  {
+   "nom": "Lanvollon",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.986, 48.6312]}",
+   "dossiers": [
+    "Lanvollon"
+   ]
+  },
+  {
+   "nom": "Larmor-Plage",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.3834, 47.7065]}",
+   "dossiers": [
+    "Complexe sportif"
+   ]
+  },
+  {
+   "nom": "Le Tronchet",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.8387, 48.4862]}",
+   "dossiers": [
+    "Ecole Albert Aubry"
+   ]
+  },
+  {
+   "nom": "Liffré",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.509, 48.2137]}",
+   "dossiers": [
+    "MSM Ehpad",
+    "Secteur Jourdanière"
+   ]
+  },
+  {
+   "nom": "Locminé",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.8357, 47.887]}",
+   "dossiers": [
+    "Étang-bois-amour-Signan"
+   ]
+  },
+  {
+   "nom": "Maxent",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.0343, 47.9827]}",
+   "dossiers": [
+    "BAP"
+   ]
+  },
+  {
+   "nom": "Médréac",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.0667, 48.2677]}",
+   "dossiers": [
+    "Médréac"
+   ]
+  },
+  {
+   "nom": "Melgven",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.835, 47.9065]}",
+   "dossiers": [
+    "Kerbouzier"
+   ]
+  },
+  {
+   "nom": "Minihy-Tréguier",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.2288, 48.7754]}",
+   "dossiers": [
+    "Aire camping cars",
+    "Minihy-Tréguier"
+   ]
+  },
+  {
+   "nom": "Montauban-de-Bretagne",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.0476, 48.1991]}",
+   "dossiers": [
+    "DUP et AMO",
+    "Eaux&Vilaine",
+    "SDGEP",
+    "Terrain Service, Les Pêcheries Terres Neuves2",
+    "ZAC Multisites"
+   ]
+  },
+  {
+   "nom": "Monterblanc",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.6813, 47.7426]}",
+   "dossiers": [
+    "CMAF"
+   ]
+  },
+  {
+   "nom": "Montfort-sur-Meu",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.9559, 48.1376]}",
+   "dossiers": [
+    "Réalités",
+    "ZAC Bromedou"
+   ]
+  },
+  {
+   "nom": "Montgermont",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.7166, 48.1557]}",
+   "dossiers": [
+    "Lotissement ALTA",
+    "Rue de pacé batiarmor"
+   ]
+  },
+  {
+   "nom": "Mordelles",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.8459, 48.0751]}",
+   "dossiers": [
+    "Résidence Beauséjour"
+   ]
+  },
+  {
+   "nom": "Moulins",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.3726, 48.0026]}",
+   "dossiers": [
+    "Lotissement-Les-Cerisiers"
+   ]
+  },
+  {
+   "nom": "Noyal-Châtillon-sur-Seiche",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.662, 48.043]}",
+   "dossiers": [
+    "RD82"
+   ]
+  },
+  {
+   "nom": "Noyal-sur-Vilaine",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.5246, 48.1124]}",
+   "dossiers": [
+    "BD Barbot Giboire",
+    "Commune-pluvial",
+    "Data Center",
+    "Etang de la Bourde",
+    "Parc chêne joli",
+    "Perméa-LAMOTTE Aménageur",
+    "Piste cyclable RN157"
+   ]
+  },
+  {
+   "nom": "Orgères",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.6683, 47.9985]}",
+   "dossiers": [
+    "Déviation Nord Haye Longue, commune",
+    "Parc public",
+    "Parc residence sénior"
+   ]
+  },
+  {
+   "nom": "Pacé",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.7744, 48.1485]}",
+   "dossiers": [
+    "Ilot CB-C04a-AN Diskuiz",
+    "Ilot CT-C08",
+    "Launay Morin, Groupe ARC",
+    "PV flottants RM"
+   ]
+  },
+  {
+   "nom": "Penvénan",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.2955, 48.8118]}",
+   "dossiers": [
+    "Lotissement-communal"
+   ]
+  },
+  {
+   "nom": "Plœuc-L'Hermitage",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.756, 48.346]}",
+   "dossiers": [
+    "Porte Louce, B2A"
+   ]
+  },
+  {
+   "nom": "Plaintel",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.8179, 48.4075]}",
+   "dossiers": [
+    "Le petit bois-B2A",
+    "Panorama"
+   ]
+  },
+  {
+   "nom": "Planguenoual",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.5764, 48.533]}",
+   "dossiers": [
+    "EH NordSud, Le Clos des Goemoniers"
+   ]
+  },
+  {
+   "nom": "Pléneuf-Val-André",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.5485, 48.5911]}",
+   "dossiers": [
+    "Dahouet, Le pré du verger, Coopalis"
+   ]
+  },
+  {
+   "nom": "Plérin",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.7698, 48.5345]}",
+   "dossiers": [
+    "Pré Palais"
+   ]
+  },
+  {
+   "nom": "Pleubian",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.1393, 48.8422]}",
+   "dossiers": [
+    "Nord-Sud, Coopalis"
+   ]
+  },
+  {
+   "nom": "Pleurtuit",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.0598, 48.5794]}",
+   "dossiers": [
+    "Aéroport",
+    "La ville au ruisseau",
+    "SACIB-Moulin rochebois",
+    "Ville Baslé"
+   ]
+  },
+  {
+   "nom": "Plobannalec-Lesconil",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-4.2167, 47.8167]}",
+   "dossiers": [
+    "Lesconil, Hôtel des Dunes"
+   ]
+  },
+  {
+   "nom": "Ploërdut",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.2871, 48.0873]}",
+   "dossiers": [
+    "EcoTree"
+   ]
+  },
+  {
+   "nom": "Ploërmel",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.3975, 47.9317]}",
+   "dossiers": [
+    "Bassin rehab",
+    "Hamiform",
+    "Univers"
+   ]
+  },
+  {
+   "nom": "Plogoff",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-4.6661, 48.037]}",
+   "dossiers": [
+    "Pointe du Raz"
+   ]
+  },
+  {
+   "nom": "Ploubazlanec",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.0319, 48.8004]}",
+   "dossiers": [
+    "Rue du général de Gaulle"
+   ]
+  },
+  {
+   "nom": "Ploudalmézeau",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-4.6579, 48.5404]}",
+   "dossiers": [
+    "Parc-Moulin-Neuf"
+   ]
+  },
+  {
+   "nom": "Ploudaniel",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-4.3115, 48.5369]}",
+   "dossiers": [
+    "Parking, Eurovia"
+   ]
+  },
+  {
+   "nom": "Ploufragan",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.7961, 48.49]}",
+   "dossiers": [
+    "Etude déconnexion site de tri, Ti Valo",
+    "Parcelle individuelle, AES"
+   ]
+  },
+  {
+   "nom": "Plougastel-Daoulas",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-4.3698, 48.3737]}",
+   "dossiers": [
+    "Lesquivit"
+   ]
+  },
+  {
+   "nom": "Plouhinec",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-4.4869, 48.0144]}",
+   "dossiers": [
+    "Plouhinec",
+    "Port"
+   ]
+  },
+  {
+   "nom": "Plouhinec (Morbihan)",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.251, 47.698]}",
+   "dossiers": [
+    "Kerabus",
+    "Kerbascuin"
+   ]
+  },
+  {
+   "nom": "Ploumilliau",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.5236, 48.6805]}",
+   "dossiers": [
+    "Villiers de l'Isle"
+   ]
+  },
+  {
+   "nom": "Pluméliau-Bieuzy",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.9735, 47.9581]}",
+   "dossiers": [
+    "Pluméliau-Bieuzy"
+   ]
+  },
+  {
+   "nom": "Pluvigner",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.0105, 47.7752]}",
+   "dossiers": [
+    "Pluvigner"
+   ]
+  },
+  {
+   "nom": "Pont-Péan",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.705, 48.012]}",
+   "dossiers": [
+    "Aire de covoiturage",
+    "Cave Donjean Launay",
+    "Terrain Gens Voyage, Rennes Métropole",
+    "ZAE, Rennes Métropole"
+   ]
+  },
+  {
+   "nom": "Pontivy",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.9665, 48.0684]}",
+   "dossiers": [
+    "Groupe Lelièvre"
+   ]
+  },
+  {
+   "nom": "Pordic",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.817, 48.571]}",
+   "dossiers": [
+    "Trémeloir, Terra Développement"
+   ]
+  },
+  {
+   "nom": "Québriac",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.8274, 48.345]}",
+   "dossiers": [
+    "Zonage EU, Bourgois"
+   ]
+  },
+  {
+   "nom": "Quessoy",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.6587, 48.4214]}",
+   "dossiers": [
+    "Rue-du-ruisseau"
+   ]
+  },
+  {
+   "nom": "Quévert",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.0866, 48.4639]}",
+   "dossiers": [
+    "Centrale à béton"
+   ]
+  },
+  {
+   "nom": "Quimperlé",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.5499, 47.8721]}",
+   "dossiers": [
+    "Axiom-diag-ruisseau"
+   ]
+  },
+  {
+   "nom": "Redon",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.0842, 47.6516]}",
+   "dossiers": [
+    "L'Ile aux pies",
+    "Pistes cyclables, Mobhilis"
+   ]
+  },
+  {
+   "nom": "Rennes",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.6743, 48.1111]}",
+   "dossiers": [
+    "3 ZAE Territoires",
+    "55 Rte de Lorient",
+    "AFPA-Haut-Sance",
+    "Artillerie-26 monnaie",
+    "Barre Thomas PA les Chevrons, Mazureau Lamotte",
+    "Bati-Armor, Speedy",
+    "Bd-Voltaire ICADE",
+    "Beauregard Département",
+    "Beauregard, Parc Quincé",
+    "Centre ancien",
+    "CHU",
+    "Cleunay-Eugene Pottier",
+    "Cleunay Neotoa",
+    "Colombier Saisine-Ae",
+    "Ecole Saint-Clement",
+    "Entree ouest giratoire RM",
+    "Eurorennes, ESMA",
+    "Eurorennes, Ilot Féval",
+    "EuroRennes, Mission AMO Privés",
+    "Eurorennes solferino-ilot-central",
+    "Eurorennes Technicentre",
+    "Fougères",
+    "Grande Mosquée",
+    "HF, Beauregard Quincé",
+    "Hopital Sud",
+    "Hotel Dieu",
+    "La courrouze",
+    "La Piverdière, SRFC",
+    "Le MEM",
+    "Leclerc Cleunay Socamaine",
+    "Ligne A métro",
+    "Lycée Coetlogon",
+    "Lycée Jeanne d'Arc",
+    "Lycée-Zola",
+    "Maraîchers, eau non conventionnelle",
+    "Orange Malakoff",
+    "PatisTatelin",
+    "Quartier sud gare",
+    "République et Gare, Arrosage",
+    "Rte de Lorient, Bati Armor",
+    "Rue de Fougères, Bâti-Armor",
+    "Rue de Fougères, Réalités",
+    "Rue de l'Alma NH",
+    "Rue de Nantes, SCCV Pompidou",
+    "Rue de St-Brieuc-Bâti Armor",
+    "Rue Francis Joly, BATI ARMOR",
+    "Rue sophie-michel, Pythagore",
+    "Rue Vaneau-MEP",
+    "Square Yves Monnier",
+    "Stade Robert Launay",
+    "The land Bzh",
+    "Victor Rault",
+    "Villejean",
+    "Yves Le Moine, Archipel",
+    "ZAC Alma, HF",
+    "ZAC Gros Chêne"
+   ]
+  },
+  {
+   "nom": "Retiers",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.3794, 47.9139]}",
+   "dossiers": [
+    "Cimetière",
+    "Roche aux Fées Communauté, liaison cycle"
+   ]
+  },
+  {
+   "nom": "Romillé",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.8921, 48.2159]}",
+   "dossiers": [
+    "Suivi renaturationCE ZAC",
+    "ZAC Placis Verdys Houltais-Giboire"
+   ]
+  },
+  {
+   "nom": "Roscoff",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.9871, 48.7238]}",
+   "dossiers": [
+    "Pole Gare, SAFI",
+    "Quartier de la gare, finistère habitat"
+   ]
+  },
+  {
+   "nom": "Roz-Landrieux",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.8156, 48.5433]}",
+   "dossiers": [
+    "Clos sous Ros"
+   ]
+  },
+  {
+   "nom": "Ruffiac",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.2823, 47.8186]}",
+   "dossiers": [
+    "Lotissement Sequoia, Mairie"
+   ]
+  },
+  {
+   "nom": "Saint-Abraham",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.41, 47.853]}",
+   "dossiers": [
+    "Plan d'eau"
+   ]
+  },
+  {
+   "nom": "Saint-Agathon",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.1051, 48.5594]}",
+   "dossiers": [
+    "Nord-Sud"
+   ]
+  },
+  {
+   "nom": "Saint-Alban",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.5352, 48.5575]}",
+   "dossiers": [
+    "Ville es Cotard Coopalis"
+   ]
+  },
+  {
+   "nom": "Saint-Armel",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.591, 48.012]}",
+   "dossiers": [
+    "Bati Armor",
+    "La minoterie",
+    "Néotoa, ZAC Boschaux",
+    "Projet Aiguillon"
+   ]
+  },
+  {
+   "nom": "Saint-Aubin-d'Aubigné",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.607, 48.262]}",
+   "dossiers": [
+    "La pilais"
+   ]
+  },
+  {
+   "nom": "Saint-Aubin-du-Cormier",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.3998, 48.2597]}",
+   "dossiers": [
+    "Démol-CFA",
+    "Neotoa, BNR"
+   ]
+  },
+  {
+   "nom": "Saint-Avé",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.7349, 47.6865]}",
+   "dossiers": [
+    "Bati-Armor"
+   ]
+  },
+  {
+   "nom": "Saint-Brandan",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.8698, 48.3897]}",
+   "dossiers": [
+    "Terra Développement"
+   ]
+  },
+  {
+   "nom": "Saint-Brieuc",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.7684, 48.5151]}",
+   "dossiers": [
+    "CCI 22, déconnexion des eaux pluviales",
+    "Lycée Chaptal",
+    "Plaineville, Domaines St Hélier St Clément, Coopalis Lamotte",
+    "Stade Fred Aubert",
+    "Villes Dorées, Réalités Nantes"
+   ]
+  },
+  {
+   "nom": "Saint-Broladre",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.6568, 48.5868]}",
+   "dossiers": [
+    "Lotissement chenevière"
+   ]
+  },
+  {
+   "nom": "Saint-Divy",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-4.335, 48.455]}",
+   "dossiers": [
+    "ZAE de Lanvian"
+   ]
+  },
+  {
+   "nom": "Saint-Domineuc",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.8763, 48.373]}",
+   "dossiers": [
+    "SDGEP, commune"
+   ]
+  },
+  {
+   "nom": "Saint-Erblon",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.6522, 48.0196]}",
+   "dossiers": [
+    "Collège",
+    "COOP Construction",
+    "Cottereuil",
+    "CottereuilRM",
+    "ZA des Leuzières"
+   ]
+  },
+  {
+   "nom": "Saint-Germain-du-Pinel",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.1671, 48.0134]}",
+   "dossiers": [
+    "Lotissement"
+   ]
+  },
+  {
+   "nom": "Saint-Gildas-de-Rhuys",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.8389, 47.5005]}",
+   "dossiers": [
+    "Kerdouin",
+    "Pierre Bleue",
+    "Saint-Gildas-de-Rhuys"
+   ]
+  },
+  {
+   "nom": "Saint-Gilles",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.8262, 48.1534]}",
+   "dossiers": [
+    "Projet HF ZAC Ile des Bois",
+    "Projet Rhizome ZAC Ile des Bois",
+    "ZAC Ile des Bois, SADIV"
+   ]
+  },
+  {
+   "nom": "Saint-Grégoire",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.6858, 48.151]}",
+   "dossiers": [
+    "Centre aquatique cimetière, commune",
+    "CHP",
+    "Collège",
+    "Forge",
+    "Haut Trait",
+    "Voirie Parc Edonia",
+    "ZA Alphasis Edonia",
+    "ZAC multi sites"
+   ]
+  },
+  {
+   "nom": "Saint-Jacques-de-la-Lande",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.7209, 48.0647]}",
+   "dossiers": [
+    "Aéroport",
+    "Aeroport-AMO",
+    "Aéroport, Bassin Sud",
+    "Courrouze Dominos",
+    "Duval, Hauts de Maltière",
+    "La Maltière"
+   ]
+  },
+  {
+   "nom": "Saint-Jean-sur-Vilaine",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.3611, 48.1172]}",
+   "dossiers": [
+    "ZAC la Touche"
+   ]
+  },
+  {
+   "nom": "Saint-Jouan-des-Guérets",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.9736, 48.5989]}",
+   "dossiers": [
+    "Rond point RD4"
+   ]
+  },
+  {
+   "nom": "Saint-M'Hervé",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.11, 48.18]}",
+   "dossiers": [
+    "Barrage Haute Vilaine, Vitré communauté"
+   ]
+  },
+  {
+   "nom": "Saint-Malo",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.007, 48.649]}",
+   "dossiers": [
+    "Avenue Aristide Briand",
+    "Bati Armor, Rue de l'Etrier, BNR",
+    "Bd de la Rance, SECIB Immo",
+    "Bonne rencontre",
+    "Caserne Lorette",
+    "Caserne Lorette, ilot 6",
+    "Caserne Lorette, ilot10",
+    "Centre technique",
+    "Château-Malo",
+    "Ciné Vauban",
+    "Clos Poucet et Bignon 2, Commandant L'Herminier, ZH",
+    "Croix Desilles 2",
+    "CTM",
+    "Etrier-ilot11",
+    "Explora, STEEN, ICADE",
+    "Fontaine aux pèlerins, Realites",
+    "G.GILLES, Emeraude Hab",
+    "Hippodrome",
+    "Hopital Broussais",
+    "Houssaye AMO",
+    "Les Marettes",
+    "Les Ormeaux, Montfleury",
+    "Loncle, BatiArmor",
+    "Lycée Jacques Cartier",
+    "Particulier, C2R Habitat",
+    "Rocabey",
+    "Rotheneuf",
+    "Rothéneuf, Compensation",
+    "Rotheneuf-EH",
+    "Rue croix raux",
+    "Rue de la balue",
+    "SCCV Nordet Aménagement",
+    "Secteur Etrier Carrière",
+    "Stade Marville",
+    "Terminal ferry",
+    "Tourville, Réalités",
+    "Triquerville",
+    "ZAC de Gaulle",
+    "ZAC de la Houssaye",
+    "ZAC de la Houssaye, étude hydrogeol"
+   ]
+  },
+  {
+   "nom": "Saint-Malo-de-Beignon",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.1499, 47.9566]}",
+   "dossiers": [
+    "Etang"
+   ]
+  },
+  {
+   "nom": "Saint-Méloir-des-Ondes",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.9044, 48.6379]}",
+   "dossiers": [
+    "Dysf hydro"
+   ]
+  },
+  {
+   "nom": "Saint-Ouen-des-Alleux",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.4256, 48.3282]}",
+   "dossiers": [
+    "Saint-Ouen-des-Alleux"
+   ]
+  },
+  {
+   "nom": "Saint-Père-Marc-en-Poulet",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.924, 48.588]}",
+   "dossiers": [
+    "ZAC Coeur de ville"
+   ]
+  },
+  {
+   "nom": "Saint-Philibert",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.0003, 47.5868]}",
+   "dossiers": [
+    "Saint-Philibert"
+   ]
+  },
+  {
+   "nom": "Saint-Pierre-Quiberon",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.1335, 47.5207]}",
+   "dossiers": [
+    "Zonage EP"
+   ]
+  },
+  {
+   "nom": "Saint-Sauveur-des-Landes",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.3131, 48.3424]}",
+   "dossiers": [
+    "Saint-Sauveur-des-Landes"
+   ]
+  },
+  {
+   "nom": "Saint-Suliac",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.9714, 48.5714]}",
+   "dossiers": [
+    "BATIMALO-rue de la gare"
+   ]
+  },
+  {
+   "nom": "Saint-Sulpice-la-Forêt",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.5796, 48.2177]}",
+   "dossiers": [
+    "ZAC"
+   ]
+  },
+  {
+   "nom": "Saint-Thurial",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.9321, 48.029]}",
+   "dossiers": [
+    "Les landiers"
+   ]
+  },
+  {
+   "nom": "Saulnières",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.5877, 47.9158]}",
+   "dossiers": [
+    "Saulnières"
+   ]
+  },
+  {
+   "nom": "Séné",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.737, 47.619]}",
+   "dossiers": [
+    "CMC-AF",
+    "Séné"
+   ]
+  },
+  {
+   "nom": "Sérent",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.5057, 47.8233]}",
+   "dossiers": [
+    "Gros Chêne, parc d'activité Brocéliande"
+   ]
+  },
+  {
+   "nom": "Servon-sur-Vilaine",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.4606, 48.1213]}",
+   "dossiers": [
+    "Commune-Clémenceau",
+    "La gare",
+    "Loirie-Launay",
+    "ZAC"
+   ]
+  },
+  {
+   "nom": "Sougéal",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.5233, 48.5097]}",
+   "dossiers": [
+    "Lotissement communal"
+   ]
+  },
+  {
+   "nom": "Taden",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.0198, 48.4751]}",
+   "dossiers": [
+    "Coopalis",
+    "Dinan Agglomération",
+    "Genetais CTR"
+   ]
+  },
+  {
+   "nom": "Telgruc-sur-Mer",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-4.3568, 48.2314]}",
+   "dossiers": [
+    "Ecole"
+   ]
+  },
+  {
+   "nom": "Theix-Noyalo",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.6506, 47.6294]}",
+   "dossiers": [
+    "Requalification-centre-ville",
+    "Secteur Plaisance, pôle sportif"
+   ]
+  },
+  {
+   "nom": "Thorigné-Fouillard",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.579, 48.158]}",
+   "dossiers": [
+    "Bd d'Argentre",
+    "Nexity",
+    "Porte de Tizé, Univers"
+   ]
+  },
+  {
+   "nom": "Thourie",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.4806, 47.8552]}",
+   "dossiers": [
+    "Lotissement-commune"
+   ]
+  },
+  {
+   "nom": "Tonquédec",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.3974, 48.6691]}",
+   "dossiers": [
+    "SPLA"
+   ]
+  },
+  {
+   "nom": "Trans-la-Forêt",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.6, 48.5]}",
+   "dossiers": [
+    "La haute rue"
+   ]
+  },
+  {
+   "nom": "Trégueux",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.74, 48.49]}",
+   "dossiers": [
+    "AREA"
+   ]
+  },
+  {
+   "nom": "Tréguier",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.232, 48.7847]}",
+   "dossiers": [
+    "Couvent des soeurs du christ"
+   ]
+  },
+  {
+   "nom": "Trélévern",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.3718, 48.8085]}",
+   "dossiers": [
+    "Stang Ogerez"
+   ]
+  },
+  {
+   "nom": "Trémeur",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.2643, 48.3476]}",
+   "dossiers": [
+    "Analyse projet"
+   ]
+  },
+  {
+   "nom": "Trémorel",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.2884, 48.2002]}",
+   "dossiers": [
+    "Trémorel"
+   ]
+  },
+  {
+   "nom": "Trévou-Tréguignec",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-3.3588, 48.814]}",
+   "dossiers": [
+    "Trévou-Tréguignec"
+   ]
+  },
+  {
+   "nom": "Val-d'Izé",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.303, 48.178]}",
+   "dossiers": [
+    "Complexe sportif",
+    "Village entreprise"
+   ]
+  },
+  {
+   "nom": "Vannes",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.762, 47.6569]}",
+   "dossiers": [
+    "Amo urba reglementaire",
+    "Avenue Georges Pompidou",
+    "Complexe-sportif",
+    "Kercado",
+    "La Noë, Giboire",
+    "Reouverture du pargo"
+   ]
+  },
+  {
+   "nom": "Vergéal",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.2656, 48.0358]}",
+   "dossiers": [
+    "Lotissement communal",
+    "Vergéal"
+   ]
+  },
+  {
+   "nom": "Vern-sur-Seiche",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.6024, 48.0459]}",
+   "dossiers": [
+    "Aire de covoit",
+    "Bois de Soeuvres",
+    "Crématorium",
+    "Hallerais-GOI",
+    "TAGV, Rennes Métropole",
+    "ZAC des Hautes Perrières"
+   ]
+  },
+  {
+   "nom": "Vezin-le-Coquet",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.7563, 48.119]}",
+   "dossiers": [
+    "EIE Centre Ville et Haie de Terre",
+    "Espace naturel des Champs Bleus",
+    "Haute Rivière-Bati Amenagement",
+    "Nichoir commune",
+    "Rue Violettes Bati Armor"
+   ]
+  },
+  {
+   "nom": "Vignoc",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.7822, 48.2479]}",
+   "dossiers": [
+    "Launay ZAC LeTertre",
+    "Parking communal",
+    "ZAC Multisites"
+   ]
+  },
+  {
+   "nom": "Vitré",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-1.2098, 48.1228]}",
+   "dossiers": [
+    "27-29 Rue des artisans, Ilot Ecozac, Bati-armor",
+    "AREA, Rue de la Guerche",
+    "Baratière",
+    "Espace-Debussy Neotoa",
+    "Espacil, ZAC des Artisans",
+    "La Briqueterie IV, lot 3",
+    "Les Ormeaux, Faber",
+    "Les Ormeaux, L2A",
+    "Monastère Saint-Nicolas",
+    "Route de Beauvais",
+    "Route de Beauvais Ville",
+    "Rue de Combourg, rue de l'augerie",
+    "Viabilis, Les Boufforts",
+    "Villemarqué, La Hodeyère",
+    "ZA Artisans, Socobret"
+   ]
+  },
+  {
+   "nom": "Yffiniac",
+   "position": "{\"type\": \"Point\", \"coordinates\": [-2.6776, 48.4848]}",
+   "dossiers": [
+    "Yffiniac"
+   ]
+  }
+ ]
+}

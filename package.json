@@ -1,0 +1,19 @@
+{
+  "name": "site-iaosenn",
+  "version": "1.0.0",
+  "description": "Site internet iao senn (site statique Eleventy, modifiable via /admin/)",
+  "scripts": {
+    "construire": "eleventy",
+    "apercu": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.8",
+    "@11ty/eleventy-img": "^7.1.1"
+  },
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,285 @@
+# Interface de modification du site iao senn (Decap CMS).
+# Adresse : https://www.iaosenn.fr/admin/
+
+locale: fr
+
+backend:
+  name: github
+  repo: "A-COMPLETER/site-iaosenn"   # [À COMPLÉTER : compte et dépôt GitHub du site]
+  branch: main
+  commit_messages:
+    create: "Ajout : {{collection}} « {{slug}} »"
+    update: "Modification : {{collection}} « {{slug}} »"
+    delete: "Suppression : {{collection}} « {{slug}} »"
+    uploadMedia: "Ajout du média « {{path}} »"
+    deleteMedia: "Suppression du média « {{path}} »"
+
+# Permet de tester l'interface sur un ordinateur, sans compte (commande : npx decap-server).
+local_backend: true
+
+publish_mode: simple
+media_folder: "src/medias"
+public_folder: "/medias"
+site_url: "https://www.iaosenn.fr"
+display_url: "https://www.iaosenn.fr"
+logo_url: "/assets/img/logo.svg"
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  # ---------- Actualités ----------
+  - name: "actualites"
+    editor: { preview: false }
+    label: "Actualités"
+    label_singular: "actualité"
+    description: "Dossiers terminés, inaugurations, nouvelles de l'agence. La plus récente apparaît en premier."
+    folder: "src/actualites"
+    create: true
+    slug: "{{titre}}"
+    identifier_field: "titre"
+    summary: "{{titre}} ({{date | date('DD/MM/YYYY')}})"
+    sortable_fields: ["date", "titre"]
+    fields:
+      - { label: "Titre", name: "titre", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: false, format: "YYYY-MM-DD" }
+      - { label: "Résumé (affiché dans la liste)", name: "resume", widget: "text", required: false }
+      - { label: "Image", name: "image", widget: "image", required: false, hint: "Format paysage de préférence. Elle est réduite automatiquement à la publication." }
+      - { label: "Texte", name: "body", widget: "markdown", buttons: ["bold", "italic", "link", "heading-two", "heading-three", "bulleted-list", "numbered-list"], editor_components: ["image"] }
+
+  # ---------- Références ----------
+  - name: "references"
+    editor: { preview: false }
+    label: "Références"
+    label_singular: "référence"
+    description: "Chaque référence apparaît sur la carte, dans la liste et sur sa propre fiche."
+    folder: "src/references"
+    create: true
+    slug: "{{titre}}"
+    identifier_field: "titre"
+    summary: "{{titre}} ({{commune}})"
+    sortable_fields: ["titre", "commune"]
+    fields:
+      - { label: "Nom du projet", name: "titre", widget: "string" }
+      - { label: "Commune", name: "commune", widget: "string", required: false }
+      - { label: "Surface", name: "surface", widget: "string", required: false, hint: "Ex. : 12 ha" }
+      - { label: "Maître d'ouvrage", name: "maitre_ouvrage", widget: "string", required: false }
+      - { label: "Équipe partenaire", name: "equipe", widget: "list", required: false, field: { label: "Nom", name: "nom", widget: "string" } }
+      - label: "Types de dossiers"
+        name: "types"
+        widget: "relation"
+        collection: "reglages"
+        file: "types"
+        search_fields: ["types.*.nom"]
+        display_fields: ["types.*.nom"]
+        value_field: "types.*.id"
+        multiple: true
+        required: false
+        hint: "Sert au filtre de la carte. La liste se modifie dans Réglages du site > Types de dossiers."
+      - { label: "Position sur la carte", name: "position", widget: "map", type: "Point", decimals: 4, required: false, hint: "Cliquer sur la carte pour placer le point, à la commune (pas à la parcelle). Sans position, la référence apparaît dans la liste mais pas sur la carte." }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Missions", name: "body", widget: "markdown", buttons: ["bold", "italic", "link", "bulleted-list"], editor_components: [], hint: "Une mission par ligne, sous forme de liste à puces." }
+
+  # ---------- Équipe ----------
+  - name: "equipe"
+    editor: { preview: false }
+    label: "Équipe"
+    label_singular: "membre"
+    folder: "src/equipe"
+    create: true
+    slug: "{{nom}}"
+    identifier_field: "nom"
+    summary: "{{ordre}}. {{nom}} ({{fonction}})"
+    sortable_fields: ["ordre", "nom"]
+    fields:
+      - { label: "Prénom et nom", name: "nom", widget: "string" }
+      - { label: "Fonction", name: "fonction", widget: "string", required: false, hint: "Ex. : Chargé d'études" }
+      - { label: "Spécialité", name: "specialite", widget: "string", required: false, hint: "Ex. : Hydraulique" }
+      - { label: "Photo", name: "photo", widget: "image", required: false, hint: "Format portrait (4:5). Sans photo, les initiales s'affichent." }
+      - { label: "Ordre d'affichage", name: "ordre", widget: "number", value_type: "int", default: 99, hint: "1 = en premier." }
+
+  # ---------- Métiers et compétences ----------
+  - name: "metiers"
+    editor: { preview: false }
+    label: "Métiers et compétences"
+    label_singular: "métier"
+    folder: "src/metiers"
+    create: true
+    slug: "{{titre}}"
+    identifier_field: "titre"
+    summary: "{{ordre}}. {{titre}}"
+    sortable_fields: ["ordre", "titre"]
+    fields:
+      - { label: "Nom du métier", name: "titre", widget: "string" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Ordre d'affichage", name: "ordre", widget: "number", value_type: "int", default: 99 }
+      - { label: "Contenu", name: "body", widget: "markdown", buttons: ["bold", "italic", "link", "bulleted-list"], editor_components: [] }
+
+  # ---------- Nos pôles ----------
+  - name: "poles"
+    editor: { preview: false }
+    label: "Nos pôles"
+    label_singular: "pôle"
+    description: "Chaque pôle apparaît sous forme d'icône. Un clic affiche la liste de ses métiers."
+    folder: "src/poles"
+    create: true
+    slug: "{{titre}}"
+    identifier_field: "titre"
+    summary: "{{ordre}}. {{titre}}"
+    sortable_fields: ["ordre", "titre"]
+    fields:
+      - { label: "Nom du pôle", name: "titre", widget: "string" }
+      - label: "Icône"
+        name: "icone"
+        widget: "select"
+        options:
+          - { label: "Goutte d'eau (hydraulique)", value: "hydraulique" }
+          - { label: "Feuille et cours d'eau (milieu naturel)", value: "milieu" }
+          - { label: "Paysage (environnement)", value: "environnement" }
+          - { label: "Dossier (support)", value: "support" }
+          - { label: "Phare (Finistère)", value: "finistere" }
+      - { label: "Ordre d'affichage", name: "ordre", widget: "number", value_type: "int", default: 99 }
+      - { label: "Métiers du pôle", name: "metiers", widget: "list", required: false, field: { label: "Métier", name: "metier", widget: "string" } }
+      - { label: "Texte (facultatif, affiché au-dessus de la liste)", name: "body", widget: "markdown", required: false, buttons: ["bold", "italic", "link"], editor_components: [] }
+
+  # ---------- Principaux dossiers ----------
+  - name: "dossiers"
+    editor: { preview: false }
+    label: "Principaux dossiers : définitions"
+    label_singular: "définition"
+    description: "Définitions affichées sous une rubrique de la page Principaux dossiers. Les rubriques et leurs listes se modifient dans Réglages du site > Principaux dossiers : rubriques."
+    folder: "src/dossiers"
+    create: true
+    slug: "{{titre}}"
+    identifier_field: "titre"
+    summary: "{{ordre}}. {{titre}}"
+    sortable_fields: ["ordre", "titre"]
+    fields:
+      - { label: "Nom du dossier ou de la procédure", name: "titre", widget: "string" }
+      - label: "Rubrique"
+        name: "rubrique"
+        widget: "relation"
+        collection: "reglages"
+        file: "rubriques"
+        search_fields: ["rubriques.*.nom"]
+        display_fields: ["rubriques.*.nom"]
+        value_field: "rubriques.*.id"
+        required: false
+      - { label: "Texte à valider (affiche « À valider » sur le site)", name: "a_valider", widget: "boolean", default: false }
+      - label: "Type de dossier lié (lien vers la carte filtrée)"
+        name: "types"
+        widget: "relation"
+        collection: "reglages"
+        file: "types"
+        search_fields: ["types.*.nom"]
+        display_fields: ["types.*.nom"]
+        value_field: "types.*.id"
+        multiple: true
+        required: false
+      - { label: "Ordre d'affichage", name: "ordre", widget: "number", value_type: "int", default: 99 }
+      - { label: "Définition", name: "body", widget: "markdown", buttons: ["bold", "italic", "link", "bulleted-list"], editor_components: [] }
+
+  # ---------- Pages ----------
+  - name: "pages"
+    label: "Pages"
+    description: "Textes des pages. Pour l'équipe, les métiers, les dossiers et les références, ce texte s'affiche en introduction, au-dessus du contenu."
+    editor: { preview: false }
+    files:
+      - { label: "Accueil", name: "accueil", file: "src/pages/accueil.md", fields: [ { label: "Titre", name: "titre", widget: "hidden" }, { label: "Modèle", name: "modele", widget: "hidden" }, { label: "Texte sous le titre de l'accueil", name: "body", widget: "markdown", buttons: ["bold", "italic", "link"], editor_components: [] } ] }
+      - { label: "Présentation", name: "presentation", file: "src/pages/presentation.md", fields: [ { label: "Titre", name: "titre", widget: "string" }, { label: "Modèle", name: "modele", widget: "hidden" }, { label: "Texte", name: "body", widget: "markdown" } ] }
+      - { label: "Nos pôles (introduction)", name: "nos-poles", file: "src/pages/nos-poles.md", fields: [ { label: "Titre", name: "titre", widget: "string" }, { label: "Modèle", name: "modele", widget: "hidden" }, { label: "Introduction", name: "body", widget: "markdown", required: false } ] }
+      - { label: "Équipe (introduction)", name: "equipe", file: "src/pages/equipe.md", fields: [ { label: "Titre", name: "titre", widget: "string" }, { label: "Modèle", name: "modele", widget: "hidden" }, { label: "Introduction", name: "body", widget: "markdown", required: false } ] }
+      - { label: "Métiers et compétences (introduction)", name: "metiers-et-competences", file: "src/pages/metiers-et-competences.md", fields: [ { label: "Titre", name: "titre", widget: "string" }, { label: "Modèle", name: "modele", widget: "hidden" }, { label: "Introduction", name: "body", widget: "markdown", required: false } ] }
+      - { label: "Principaux dossiers (texte de fin)", name: "principaux-dossiers", file: "src/pages/principaux-dossiers.md", fields: [ { label: "Titre", name: "titre", widget: "string" }, { label: "Modèle", name: "modele", widget: "hidden" }, { label: "Texte sous la liste des dossiers", name: "body", widget: "markdown", required: false } ] }
+      - { label: "Références (introduction)", name: "references", file: "src/pages/references.md", fields: [ { label: "Titre", name: "titre", widget: "string" }, { label: "Modèle", name: "modele", widget: "hidden" }, { label: "Introduction", name: "body", widget: "markdown", required: false } ] }
+      - { label: "Contact (introduction)", name: "contact", file: "src/pages/contact.md", fields: [ { label: "Titre", name: "titre", widget: "string" }, { label: "Modèle", name: "modele", widget: "hidden" }, { label: "Introduction", name: "body", widget: "markdown", required: false } ] }
+      - { label: "Mentions légales", name: "mentions-legales", file: "src/pages/mentions-legales.md", fields: [ { label: "Titre", name: "titre", widget: "string" }, { label: "Modèle", name: "modele", widget: "hidden" }, { label: "Texte", name: "body", widget: "markdown" } ] }
+
+  # ---------- Réglages ----------
+  - name: "reglages"
+    label: "Réglages du site"
+    editor: { preview: false }
+    files:
+      - label: "Couleurs, accueil et coordonnées"
+        name: "general"
+        file: "src/_data/reglages.json"
+        fields:
+          - { label: "Nom du site", name: "nom", widget: "string" }
+          - { label: "Slogan (titre de l'accueil par défaut, pied de page)", name: "description", widget: "string" }
+          - { label: "Vert de la charte", name: "couleur_vert", widget: "color" }
+          - { label: "Violet de la charte", name: "couleur_violet", widget: "color" }
+          - { label: "Logo en filigrane dans le fond", name: "filigrane", widget: "boolean" }
+          - { label: "Titre de l'accueil (vide : slogan)", name: "accroche", widget: "string", required: false }
+          - { label: "Thèmes mis en avant sur l'accueil", name: "themes", widget: "list", max: 3, field: { label: "Thème", name: "theme", widget: "string" } }
+          - { label: "Nom de l'agence principale (page Contact)", name: "nom_agence", widget: "string", required: false }
+          - { label: "Adresse postale", name: "adresse", widget: "text" }
+          - { label: "Téléphone", name: "telephone", widget: "string" }
+          - { label: "Courriel", name: "courriel", widget: "string" }
+          - { label: "Adresse de la page LinkedIn", name: "linkedin", widget: "string", required: false }
+          - label: "Autres agences (page Contact)"
+            name: "agences"
+            widget: "list"
+            required: false
+            summary: "{{fields.nom}}"
+            fields:
+              - { label: "Nom", name: "nom", widget: "string" }
+              - { label: "Adresse postale", name: "adresse", widget: "text", required: false }
+              - { label: "Téléphone", name: "telephone", widget: "string", required: false }
+              - { label: "Courriel", name: "courriel", widget: "string", required: false }
+      - label: "Menus"
+        name: "menu"
+        file: "src/_data/menu.json"
+        fields:
+          - label: "Menu principal"
+            name: "liens"
+            widget: "list"
+            summary: "{{fields.titre}}"
+            fields:
+              - { label: "Texte", name: "titre", widget: "string" }
+              - { label: "Adresse", name: "url", widget: "string", hint: "Ex. : /references/" }
+          - label: "Liens du pied de page"
+            name: "pied"
+            widget: "list"
+            summary: "{{fields.titre}}"
+            fields:
+              - { label: "Texte", name: "titre", widget: "string" }
+              - { label: "Adresse", name: "url", widget: "string" }
+      - label: "Types de dossiers (filtre de la carte)"
+        name: "types"
+        file: "src/_data/typesdossiers.json"
+        fields:
+          - label: "Types"
+            name: "types"
+            widget: "list"
+            summary: "{{fields.nom}}"
+            hint: "Ne pas modifier l'identifiant d'un type déjà utilisé : les références qui l'emploient le perdraient."
+            fields:
+              - { label: "Nom affiché", name: "nom", widget: "string" }
+              - { label: "Identifiant (minuscules, sans accents ni espaces)", name: "id", widget: "string", pattern: ["^[a-z0-9-]+$", "Minuscules, chiffres et tirets uniquement"] }
+      - label: "Principaux dossiers : rubriques"
+        name: "rubriques"
+        file: "src/_data/rubriques.json"
+        fields:
+          - label: "Rubriques"
+            name: "rubriques"
+            widget: "list"
+            summary: "{{fields.nom}}"
+            fields:
+              - { label: "Nom affiché", name: "nom", widget: "string" }
+              - { label: "Identifiant (minuscules, sans accents ni espaces)", name: "id", widget: "string", pattern: ["^[a-z0-9-]+$", "Minuscules, chiffres et tirets uniquement"] }
+              - { label: "Éléments de la liste", name: "elements", widget: "list", field: { label: "Élément", name: "element", widget: "string" } }
+      - label: "Carte : dossiers par commune"
+        name: "dossierscommunes"
+        file: "src/_data/dossierscommunes.json"
+        description: "Un point par commune sur la carte des références. Un clic sur le point affiche ses dossiers."
+        fields:
+          - label: "Communes"
+            name: "communes"
+            widget: "list"
+            summary: "{{fields.nom}}"
+            fields:
+              - { label: "Commune", name: "nom", widget: "string" }
+              - { label: "Position sur la carte", name: "position", widget: "map", type: "Point", decimals: 4, hint: "Cliquer sur la carte pour placer le point de la commune." }
+              - { label: "Dossiers", name: "dossiers", widget: "list", field: { label: "Nom du dossier", name: "dossier", widget: "string" } }

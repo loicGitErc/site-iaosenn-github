@@ -1,0 +1,59 @@
+---
+layout: base.njk
+---
+{%- set urlRefs = "/references/" -%}
+<section class="accueil">
+	<div class="accueil__texte">
+		<h1 class="accueil__titre">{{ reglages.accroche or reglages.description }}</h1>
+		<div class="accueil__chapo">{{ content | safe }}</div>
+		<p class="actions">
+			<a class="bouton" href="/references/">Voir nos références</a>
+			<a class="bouton bouton--contour" href="/contact/">Nous contacter</a>
+		</p>
+	</div>
+	<div class="accueil__motif" aria-hidden="true"></div>
+</section>
+
+<section class="themes">
+	<div class="conteneur themes__grille">
+		{%- for t in reglages.themes %}{% if t %}
+		<p class="themes__item">{{ t }}</p>
+		{%- endif %}{% endfor %}
+	</div>
+</section>
+
+{% if collections.metiers.length %}
+<section class="bloc">
+	<div class="conteneur">
+		<h2 class="titre-section">Métiers et compétences</h2>
+		<ul class="metiers-accueil">
+			{%- for m in collections.metiers %}
+			<li><a href="/metiers-et-competences/#metier-{{ m.page.fileSlug }}">{{ m.data.titre }}</a></li>
+			{%- endfor %}
+		</ul>
+	</div>
+</section>
+{% endif %}
+
+<section class="bloc bloc--gris">
+	<div class="conteneur duo">
+		<div>
+			<h2 class="titre-section">Références</h2>
+			<p>{{ collections.references.length }} références détaillées et {{ dossierscommunes.communes | communesCarte | totalDossiers }} dossiers à retrouver sur la carte, commune par commune.</p>
+			<p><a class="bouton" href="/references/">Ouvrir la carte des références</a></p>
+		</div>
+		<div>
+			<h2 class="titre-section">Actualités</h2>
+			{% if collections.actualites.length %}
+			<ul class="actus-accueil">
+				{%- for a in collections.actualites | head(3) %}
+				<li><time datetime="{{ a.date | dateIso }}">{{ a.date | dateFr }}</time><a href="{{ a.url }}">{{ a.data.titre }}</a></li>
+				{%- endfor %}
+			</ul>
+			<p><a href="/actualites/">Toutes les actualités</a></p>
+			{% else %}
+			<p>Aucune actualité publiée pour l'instant.</p>
+			{% endif %}
+		</div>
+	</div>
+</section>

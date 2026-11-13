@@ -1,0 +1,42 @@
+{
+  "liens": [
+    {
+      "titre": "Présentation",
+      "url": "/presentation/"
+    },
+    {
+      "titre": "Équipe",
+      "url": "/equipe/"
+    },
+    {
+      "titre": "Nos pôles",
+      "url": "/nos-poles/"
+    },
+    {
+      "titre": "Métiers et compétences",
+      "url": "/metiers-et-competences/"
+    },
+    {
+      "titre": "Actualités",
+      "url": "/actualites/"
+    },
+    {
+      "titre": "Principaux dossiers",
+      "url": "/principaux-dossiers/"
+    },
+    {
+      "titre": "Références",
+      "url": "/references/"
+    },
+    {
+      "titre": "Contact",
+      "url": "/contact/"
+    }
+  ],
+  "pied": [
+    {
+      "titre": "Mentions légales",
+      "url": "/mentions-legales/"
+    }
+  ]
+}
